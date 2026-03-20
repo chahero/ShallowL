@@ -4,7 +4,12 @@
       "Bash(npm install:*)",
       "Bash(timeout 8 npm run dev)",
       "Bash(npx tsc:*)",
-      "Bash(\"F:/git_repository/ShallowL/README.kr.md\":*)"
+      "Bash(\"F:/git_repository/ShallowL/README.kr.md\":*)",
+      "Bash(find release:*)",
+      "Bash(rmdir release:*)",
+      "Bash(npm run:*)",
+      "Bash(ls -lh F:/git_repository/ShallowL/out/*.exe)",
+      "Bash(find F:/git_repository/ShallowL/out/win-unpacked/resources/app.asar -o -name *.asar)"
     ]
   }
 }

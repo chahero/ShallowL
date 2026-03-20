@@ -1,8 +1,8 @@
 {
-  "type": "module",
   "name": "shallowl",
   "version": "0.1.0",
   "description": "A beautiful DeepL parody translator using local Ollama",
+  "author": "ShallowL",
   "main": "dist/electron/main.js",
   "preload": "dist/electron/preload.js",
   "scripts": {
@@ -29,5 +29,22 @@
     "tailwindcss": "^3",
     "typescript": "^5",
     "vite": "^5"
+  },
+  "build": {
+    "appId": "com.shallowl.app",
+    "productName": "ShallowL",
+    "files": [
+      "dist"
+    ],
+    "extraMetadata": {
+      "main": "dist/electron/main.js"
+    },
+    "directories": {
+      "output": "out",
+      "buildResources": "assets"
+    },
+    "win": {
+      "target": ["portable"]
+    }
   }
 }
